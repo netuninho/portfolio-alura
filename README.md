@@ -6,14 +6,15 @@
 <p align="center">
  <a href="#objetivo">Objetivo</a> •
  <a href="#funcionalidades"> Funcionalidades</a> • 
- <a href="#uso">Uso</a> • 
  <a href="#tecnologias">Tecnologias</a> 
 </p>
 
 ### Objetivo
 
-Escolhi apresentar dois desafios que me atraíram pelas ideias e pelo uso interessante de JavaScript e aproveitei para mostrar dois projetos antigos, que mostrar minha paixão pela lógica e meu lado criativo. 
-Espero que você goste!
+Decidi realizar os dois desafios, pois ambos me atraem pelas ideias inovadoras e pelo uso interessante de JavaScript.
+Escolhi colocar dois projetos antigos, porque apesar de terem sido desenvolvidos há algum tempo, mostram a evolução das minhas habilidades e o impacto das soluções que desenvolvi.
+
+Espero que apreciem os projetos e veja o quanto eles refletem meu trabalho e dedicação.
 
 Para acessar o portfolio clique aqui -> [AQUI](https://portfolio-alura-roan-sigma.vercel.app/index.html)
 
