@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container.dark-theme .header-link .header-content .site-title {
+  color: #D7F9FF;
+}
+.container .header-link {
+  text-decoration: none;
+}
+.container .header-link .header-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 74px 124px 69px;
+}
+@media screen and (max-width: 980px) {
+  .container .header-link .header-content {
+    padding: 74px 78px 69px;
+  }
+}
+.container .header-link .header-content .site-title {
+  font-family: "Chakra Petch";
+  font-size: 24px;
+  color: #284260;
+  line-height: 24px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.container.dark-theme {
+  background-color: #01080e;
+}
+.container.dark-theme .main-content .about-me .about-me-subtitle {
+  color: #FFFFFF;
+}
+.container.dark-theme .main-content .about-me .about-me-description {
+  color: #98D4DE;
+}
+.container.dark-theme .main-content .about-me .skills .skills-title {
+  color: #98D4DE;
+}
+.container.dark-theme .main-content .projects .projects-title {
+  color: #D7F9FF;
+}
+.container.dark-theme .main-content .projects .projects-container .project-item .project-title {
+  color: #D7F9FF;
+}
+.container.dark-theme .main-content .projects .projects-container .project-item .project-description {
+  color: #98D4DE;
+}
+.container.dark-theme .main-content .projects .projects-container .project-item .project-button {
+  background-color: #01080e;
+}
+.container.dark-theme .main-content .contact .contact-header .contact-subtitle {
+  color: #D7F9FF;
+}
+.container.dark-theme .main-content .contact .contact-list .contact-item .contact-text {
+  color: #98D4DE;
+}
+.container .main-content .about-me {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../../assets/img/bg-colors.png);
+}
+@media screen and (max-width: 980px) {
+  .container .main-content .about-me {
+    margin-left: 16%;
+  }
+}
+.container .main-content .about-me .profile-photo {
+  width: 224px;
+  height: 224px;
+  border: 2px solid #1CA7C8;
+  border-radius: 100%;
+  margin-bottom: 24px;
+}
+.container .main-content .about-me .about-me-title {
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  color: #1CA7C8;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.container .main-content .about-me .about-me-subtitle {
+  font-family: "Chakra Petch";
+  font-size: 48px;
+  color: #284260;
+  line-height: 60px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin-bottom: 24px;
+}
+.container .main-content .about-me .about-me-subtitle .gradient {
+  background-image: linear-gradient(to right, #8c61d5, #5982d0, #1fa5c8);
+  color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container .main-content .about-me .about-me-description {
+  font-family: "Inter";
+  font-size: 16px;
+  color: #6E859F;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  width: 500px;
+  margin-bottom: 40px;
+}
+.container .main-content .about-me .skills {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.container .main-content .about-me .skills .skills-title {
+  font-family: "Inter";
+  font-size: 16px;
+  color: #6E859F;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.container .main-content .about-me .skills .skills-list {
+  display: flex;
+  gap: 14px;
+}
+.container .main-content .about-me .skills .skills-list .skill-item {
+  font-family: "Inter";
+  font-size: 16px;
+  color: #1CA7C8;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #1CA7C8;
+}
+.container .main-content .divider {
+  text-align: center;
+  margin-bottom: 90px;
+}
+@media screen and (max-width: 980px) {
+  .container .main-content .divider img {
+    margin-left: 16%;
+    width: 350px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .container .main-content .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.container .main-content .projects .projects-title {
+  font-family: "Chakra Petch";
+  font-size: 24px;
+  color: #284260;
+  line-height: 24px;
+  font-weight: 700;
+  padding-left: 124px;
+}
+@media screen and (max-width: 980px) {
+  .container .main-content .projects .projects-title {
+    margin-bottom: 24px;
+  }
+}
+.container .main-content .projects .projects-container {
+  display: flex;
+  gap: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .container .main-content .projects .projects-container {
+    padding: 40px 124px 150px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .container .main-content .projects .projects-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16%;
+    margin-bottom: 40px;
+  }
+}
+.container .main-content .projects .projects-container .project-item {
+  text-align: center;
+  padding: 24px;
+  border: 1px solid #1CA7C8;
+}
+.container .main-content .projects .projects-container .project-item .project-image {
+  margin-bottom: 26px;
+}
+.container .main-content .projects .projects-container .project-item .project-title {
+  color: #284260;
+  font-family: "Chakra Petch";
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+.container .main-content .projects .projects-container .project-item .project-description {
+  color: #6E859F;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 26px;
+}
+.container .main-content .projects .projects-container .project-item .project-button {
+  width: 340px;
+  border: none;
+  text-align: left;
+  background-color: #FFFFFF;
+}
+.container .main-content .projects .projects-container .project-item .project-button .project-link {
+  color: #1CA7C8;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.container .main-content .projects .projects-container .project-item:hover {
+  box-shadow: 0px 4px 44px 0px rgba(28, 167, 200, 0.3019607843);
+}
+.container .main-content .contact {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 124px;
+  margin-bottom: 200px;
+}
+@media screen and (max-width: 980px) {
+  .container .main-content .contact {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+}
+.container .main-content .contact .contact-header {
+  text-align: left;
+  font-family: "Chakra Petch";
+}
+@media screen and (max-width: 980px) {
+  .container .main-content .contact .contact-header {
+    margin-bottom: 50px;
+  }
+}
+.container .main-content .contact .contact-header .contact-title {
+  color: #1CA7C8;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.container .main-content .contact .contact-header .contact-subtitle {
+  color: #284260;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+@media screen and (min-width: 1024px) {
+  .container .main-content .contact .contact-list {
+    padding-right: 270px;
+  }
+}
+.container .main-content .contact .contact-list .contact-item {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.container .main-content .contact .contact-list .contact-item .contact-text {
+  color: #6E859F;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.container.dark-theme .footer-content .footer-text {
+  color: #98D4DE;
+}
+.container .footer-content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container .footer-content .footer-text {
+  color: #6E859F;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.container.dark-theme .project-content .project-details .project-description .project-title {
+  color: #D7F9FF;
+}
+.container.dark-theme .project-content .project-details .project-description .project-tools-title {
+  color: #98D4DE;
+}
+.container.dark-theme .project-content .project-text {
+  color: #98D4DE;
+}
+.container .project-content {
+  background-image: url(../../assets/img/bg-colors.png);
+  background-size: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .container .project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container .project-content .project-details {
+  display: flex;
+  gap: 24px;
+}
+@media screen and (max-width: 980px) {
+  .container .project-content .project-details {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container .project-content .project-details .project-description {
+    width: 556px;
+  }
+}
+.container .project-content .project-details .project-description .project-title {
+  font-family: "Chakra Petch";
+  font-size: 48px;
+  color: #284260;
+  line-height: 48px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 980px) {
+  .container .project-content .project-details .project-description .project-title {
+    font-size: 30px;
+  }
+}
+.container .project-content .project-details .project-description .project-tools-title {
+  font-family: "Inter";
+  font-size: 16px;
+  color: #6E859F;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.container .project-content .project-details .project-description .tools-list {
+  display: flex;
+  gap: 14px;
+}
+@media screen and (max-width: 980px) {
+  .container .project-content .project-details .project-description .tools-list {
+    justify-content: center;
+  }
+}
+.container .project-content .project-details .project-description .tools-list .tool-item {
+  font-family: "Inter";
+  font-size: 16px;
+  color: #1CA7C8;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #1CA7C8;
+}
+.container .project-content .project-details .project-image-container {
+  margin-bottom: 65px;
+}
+@media screen and (min-width: 1024px) {
+  .container .project-content .project-details .project-image-container {
+    width: 608px;
+    height: 358px;
+  }
+}
+.container .project-content .project-details .project-image-container .project-image {
+  width: 100%;
+  height: 100%;
+}
+.container .project-content .project-text {
+  font-family: "Inter";
+  font-size: 16px;
+  color: #6E859F;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 90px;
+}
+@media screen and (min-width: 1024px) {
+  .container .project-content .project-text {
+    width: 1192px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .container .project-content .project-text {
+    padding: 0 20px;
+    text-align: center;
+  }
+}
+.container .project-content .project-links {
+  margin-bottom: 200px;
+}
+@media screen and (max-width: 980px) {
+  .container .project-content .project-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+}
+.container .project-content .project-links .project-button {
+  border: none;
+  border-radius: 100px;
+  padding: 16px 28px;
+  margin-left: 20px;
+}
+.container .project-content .project-links .project-button .project-link {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.container .project-content .project-links .project-button:first-child {
+  background: linear-gradient(90deg, #8C61D5 0%, #1BA3C3 100%);
+}
+.container .project-content .project-links .project-button:nth-child(2) {
+  background-color: #1CA7C8;
+}
+
+/*# sourceMappingURL=main.css.map */

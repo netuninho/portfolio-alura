@@ -1,0 +1,22 @@
+@use 'variables';
+
+.container {
+    &.dark-theme {
+        .footer-content .footer-text {
+            color: variables.$dark-primary-color;
+        }
+    }
+
+    .footer-content {
+        text-align: center;
+        margin-bottom: 20px;
+    
+        .footer-text {
+            color: variables.$tertiary-color;
+            font-family: variables.$font-inter;
+            font-size: variables.$small-size;
+            line-height: variables.$medium-small-size;
+            font-weight: variables.$small-weight;
+        }
+    }
+}

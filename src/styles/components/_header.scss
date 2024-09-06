@@ -1,0 +1,33 @@
+@use 'variables';
+
+.container {
+    &.dark-theme {
+        .header-link .header-content .site-title {
+            color: variables.$dark-secondary-color;
+        }
+    }
+
+    .header-link {
+        text-decoration: none;
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 74px 124px 69px;
+    
+            @media screen and (max-width: 980px) {
+                padding: 74px 78px 69px;
+            }
+            
+            .site-title {
+                font-family: variables.$font-chakra;
+                font-size: variables.$medium-size;
+                color: variables.$secondary-color;
+                line-height: variables.$medium-size;
+                font-weight: variables.$large-weight;
+                white-space: nowrap;
+            }
+        }
+    }
+}

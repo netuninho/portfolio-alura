@@ -1,0 +1,304 @@
+@use 'variables';
+
+.container { 
+    @media screen and (max-width: 980px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &.dark-theme {
+        background-color: variables.$dark-theme;
+
+        .main-content {
+            .about-me {
+                .about-me-subtitle{
+                    color: variables.$quaternary-color;
+                }
+    
+                .about-me-description {
+                    color: variables.$dark-primary-color;
+                }
+
+                .skills .skills-title {
+                    color: variables.$dark-primary-color;
+                }
+            }
+
+            .projects {
+                .projects-title {
+                    color: variables.$dark-secondary-color;
+                }
+
+                .projects-container .project-item {
+                    .project-title {
+                        color: variables.$dark-secondary-color;
+                    }
+
+                    .project-description {
+                        color: variables.$dark-primary-color;
+                    }
+
+                    .project-button {
+                        background-color: variables.$dark-theme;
+                    }
+                }
+            }
+
+            .contact {
+                .contact-header .contact-subtitle {
+                    color: variables.$dark-secondary-color;
+                }
+
+                .contact-list .contact-item .contact-text {
+                    color: variables.$dark-primary-color;
+                }
+            }
+        }
+    }
+
+    .main-content {      
+        .about-me { 
+            @media screen and (max-width: 980px) {
+                margin-left: 16%;
+            }
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-image: url(../../assets/img/bg-colors.png);
+    
+    
+            .profile-photo {
+                width: 224px;
+                height: 224px;
+                border: 2px solid variables.$primary-color;
+                border-radius: 100%;
+                margin-bottom: 24px;
+            }
+    
+            .about-me-title {
+                font-family: variables.$font-chakra;
+                font-size: variables.$small-size;
+                color: variables.$primary-color;
+                line-height: variables.$medium-size;
+                font-weight: variables.$large-weight;
+                margin-bottom: 24px;
+            }
+    
+            .about-me-subtitle {
+                font-family: variables.$font-chakra;
+                font-size: variables.$large-small-size;
+                color: variables.$secondary-color;
+                line-height: variables.$large-size;
+                font-weight: variables.$large-weight;
+                white-space: nowrap;
+                margin-bottom: 24px;
+
+                .gradient {
+                    background-image: linear-gradient(to right, #8c61d5, #5982d0, #1fa5c8);
+                    color: black;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+    
+            .about-me-description {
+                font-family: variables.$font-inter;
+                font-size: variables.$small-size;
+                color: variables.$tertiary-color;
+                line-height: variables.$medium-size;
+                font-weight: variables.$small-weight;
+                text-align: center;
+                width: 500px;
+                margin-bottom: 40px;
+            }
+    
+            .skills {
+                text-align: center;
+                margin-bottom: 90px;
+    
+                .skills-title {
+                    font-family: variables.$font-inter;
+                    font-size: variables.$small-size;
+                    color: variables.$tertiary-color;
+                    line-height: variables.$medium-size;
+                    font-weight: variables.$large-weight;
+                    margin-bottom: 20px;
+                }
+    
+                .skills-list {
+                    display: flex;
+                    gap: 14px;
+    
+                    .skill-item {
+                        font-family: variables.$font-inter;
+                        font-size: variables.$small-size;
+                        color: variables.$primary-color;
+                        line-height: variables.$medium-size;
+                        font-weight: variables.$large-weight;
+                        padding: 8px 12px;
+                        border-radius: 5px;
+                        border: 1px solid variables.$primary-color;
+                    }
+                }
+            }
+        }
+    
+        .divider {
+            text-align: center;
+            margin-bottom: 90px;
+
+            img {
+                @media screen and (max-width: 980px) {
+                    margin-left: 16%;
+                    width: 350px;
+                }
+            }
+        }
+    
+        .projects {
+            @media screen and (max-width: 980px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .projects-title {
+                font-family: variables.$font-chakra;
+                font-size: variables.$medium-size;
+                color: variables.$secondary-color;
+                line-height: variables.$medium-size;
+                font-weight: variables.$large-weight;
+                padding-left: 124px;
+
+                @media screen and (max-width: 980px) {
+                    margin-bottom: 24px;
+                }
+            }
+    
+            .projects-container {
+                display: flex;
+                gap: 24px;
+                
+                @media screen and (min-width: 1024px) {
+                    padding: 40px 124px 150px;
+                }
+
+                @media screen and (max-width: 980px) {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 16%;
+                    margin-bottom: 40px;
+                }
+    
+                .project-item {
+                    text-align: center;
+                    padding: 24px;
+                    border: 1px solid variables.$primary-color;
+    
+                    .project-image {
+                        margin-bottom: 26px;
+                    }
+    
+                    .project-title {
+                        color: variables.$secondary-color;
+                        font-family: variables.$font-chakra;
+                        font-size: variables.$medium-small-size;
+                        line-height: variables.$medium-small-size;
+                        font-weight: variables.$large-weight;
+                        margin-bottom: 26px;
+                    }
+    
+                    .project-description {
+                        color: variables.$tertiary-color;
+                        font-family: variables.$font-inter;
+                        font-size: variables.$small-size;
+                        line-height: variables.$medium-size;
+                        font-weight: variables.$small-weight;
+                        margin-bottom: 26px;
+                    }
+    
+                    .project-button {  
+                        width: 340px;
+                        border: none;
+                        text-align: left;
+                        background-color: variables.$quaternary-color;     
+                                    
+                        .project-link {
+                            color: variables.$primary-color;
+                            font-family: variables.$font-inter;
+                            font-size: variables.$small-size;
+                            line-height: variables.$medium-size;
+                            font-weight: variables.$large-weight;
+                            text-decoration: none;
+                        }
+                    }
+    
+                    &:hover {
+                        box-shadow: 0px 4px 44px 0px #1CA7C84D;
+                    }
+                }
+            }
+        }
+    
+        .contact {
+
+            @media screen and (max-width: 980px) {
+                flex-direction: column;
+                margin-bottom: 50px;
+            }
+
+            display: flex;
+            justify-content: space-between;
+            padding-left: 124px;
+            margin-bottom: 200px;
+    
+            .contact-header {
+                text-align: left;
+                font-family: variables.$font-chakra;
+
+                @media screen and (max-width: 980px) {
+                    margin-bottom: 50px;
+                }
+    
+                .contact-title {
+                    color: variables.$primary-color;
+                    font-size: variables.$small-size;
+                    line-height: variables.$medium-size;
+                    font-weight: variables.$large-weight;
+                }
+    
+                .contact-subtitle {
+                    color: variables.$secondary-color;
+                    font-size: variables.$large-size;
+                    line-height: variables.$large-size;
+                    font-weight: variables.$large-weight;
+                }
+            }
+    
+            .contact-list {
+                @media screen and (min-width: 1024px) {
+                    padding-right: 270px;
+                }
+    
+                .contact-item {
+                    display: flex;
+                    gap: 8px;
+                    margin-bottom: 12px;
+                    .contact-text {
+                        color: variables.$tertiary-color;
+                        font-family: variables.$font-inter;
+                        font-size: variables.$small-size;
+                        line-height: variables.$medium-size;
+                        font-weight: variables.$small-weight;
+                    }
+                }
+            }
+        }
+    }
+}
